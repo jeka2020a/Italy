@@ -12,8 +12,8 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        require_once "header.php";
+    <?html
+        require_once "header.html";
     ?>
 
 
@@ -29,7 +29,7 @@
                 <input type="text" id="name" class="form__input" placeholder="    nome" name="name" require>
                 <input type="text" id="number" class="form__input" placeholder="    telefono" name="number" require>
                 <input class="form__button" type="submit" name="button">
-                <?php
+                <?html
                     if (isset($_POST['button']))
                     {
                         mail($to, $subject, $message);
@@ -83,8 +83,8 @@
 
 
 
-    <?php
-        require_once "footer.php";
+    <?html
+        require_once "footer.html";
     ?>
 <script>
     function sendMail(){
@@ -93,7 +93,7 @@
         console.log('Sikerült')
         axios({
             method: 'post',
-            url: 'send__message.php',
+            url: 'send__message.html',
             data: {
                 name,
                 number
