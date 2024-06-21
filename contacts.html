@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/contacts.css">
+    <link rel="stylesheet" href="style/adaptive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        require_once "header.php";
+    ?>
+
+
+    <section class="form">
+        <div class="container">
+            <h1 class="form__title">
+                Volete ordinare?
+            </h1>
+            <h2 class="form__subtitle">
+                Contattateci per ordinare qualcosa
+            </h2>
+            <form method="post" class="form__form" onsubmit="sendMail()">
+                <input type="text" id="name" class="form__input" placeholder="    nome" name="name" require>
+                <input type="text" id="number" class="form__input" placeholder="    telefono" name="number" require>
+                <input class="form__button" type="submit" name="button">
+                <?php
+                    if (isset($_POST['button']))
+                    {
+                        mail($to, $subject, $message);
+                        echo $message__send;
+                    } 
+                    else {
+                        echo $error;
+                    }
+                ?>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section class="location">
+        <div class="container">
+            <div class="location__block">
+                <div class="location__info">
+                    <h2 class="location__title">
+                        CONTATTATECI
+                    </h2>
+                    <h3 class="location__subtitle">
+                        Avete una domanda?
+                    </h3>
+                    <p class="location__subtext text">
+                        Contattateci per qualsiasi domanda. Siamo sempre qui per voi!
+                    </p>
+                    <div class="location__textbox">
+                        <h3 class="location__title">
+                            Telefono
+                        </h3>
+                        <p class="location__text text">
+                            +39 3123456789
+                        </p>
+                        <h3 class="location__title">
+                            Indirizzo
+                        </h3>
+                        <p class="location__text text">
+                            Largo del Teatro Valle, 5, 00186 Roma, RM, Italy
+                        </p>
+                    </div>
+                </div>
+                <div class="location__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d36402.40971625654!2d12.43920672443821!3d41.90781664824089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0ZbRgtCw0LvRltGPINC80LDQs9Cw0LfQuNC9INGW0LPRgNCw0YjQvtC6!5e0!3m2!1sru!2sua!4v1689482368719!5m2!1sru!2sua" class="google__map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+
+    <?php
+        require_once "footer.php";
+    ?>
+<script>
+    function sendMail(){
+        const name=document.getElementById("name").value;
+        const number=document.getElementById("number").value;
+        console.log('Sikerült')
+        axios({
+            method: 'post',
+            url: 'send__message.php',
+            data: {
+                name,
+                number
+            }
+        }).then(function (response) {
+            alert('Sikerült')
+        }).catch(function (error) {
+            console.log(error.data)
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

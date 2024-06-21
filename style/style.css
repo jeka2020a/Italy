@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0 auto;
+}
+.header__burger , .header__menu-mobile {
+    display: none;
+}
+h1 , h2 , h3 , h4{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Zilla Slab', serif;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.text {
+    font-family: 'Arsenal', sans-serif;
+}
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header__logo {
+    color: #FFF;
+}
+.header__container {
+    background-image: url("../images/playing-toys-concept-with-wooden-cubes-kid-toys-on-wooden-background-flat-lay.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: inset 0px 0px 200px 100px #000;
+}
+.header__block {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(149, 180, 9);
+    color: #FFF;
+}
+.header__flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__link {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #FFF;
+}
+.header__title {
+    color:#FFF;
+}
+.header__text {
+    max-width: 350px;
+    font-size: 15pt;
+    color: #FFF;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.header__link-about {
+    text-decoration: none;
+    color: #FFF;
+    background-color: rgb(149, 180, 9);
+    border: 3px solid rgb(149, 180, 9);
+    padding: 10px 20px;
+    border-radius: 2px;
+    transition: 500ms;
+}
+.header__link-about:hover {
+    background: none;
+}
+.images__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.images__title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.images__img {
+    border-radius: 10px;
+    width: 270px;
+    height: 340px;
+    transition: 600ms;
+    margin-bottom: 50px;
+}
+.images__img:hover {
+    box-shadow: 0px 0px 15px #bbb;
+    transform: scale(1.1);
+}
+.abouttoy {
+    background: rgb(149,180,9);
+    background: linear-gradient(140deg, rgba(149,180,9,1) 0%, rgba(9,121,59,1) 100%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.abouttoy__title {
+    text-align: center;
+    color: #FFF;
+}
+.abouttoy__subtitle {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+}
+.abouttoy__subtext {
+    color: #FFF; 
+    text-align: center;
+}
+.abouttoy__textbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.abouttoy__text {
+    color: #FFF;
+    max-width: 340px;
+    font-size: 14pt;
+}
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer__title {
+    color: #000;
+}
+.footer__text {
+    color: #000;
+    align-items: center;
+}
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*
+.footer__text-location, .footer__text-phone {
+    position: relative;
+}
+.footer__text-location::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/location_icon-icons.com_50109.png");
+    width: 40px;
+    height: 40px;
+    bottom: 1px;
+    right: 350px;
+}
+.footer__text-phone::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/phone-call-auricular-symbol-in-black_icon-icons.com_56483.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    bottom: 1px;
+    right: 350px;
+}/*

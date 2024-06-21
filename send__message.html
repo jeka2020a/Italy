@@ -1,0 +1,14 @@
+<?php
+    $data = json_decode(file_get_contents("php://input"), true);
+    $name = $data['name'];
+    $number = $data['phone'];
+
+    $to = "aokore1337@gmail.com";
+    $subject = "Order";
+    $message = "Name: ".$name."\n".
+               "Phone: ".$number."\n".
+               "\r\n";
+ 
+    $error = "<p class='message__send text'>messaggio inviato</p>";
+    $message__send = "<p class='error text'>Errore nell'invio</p>";
+?>

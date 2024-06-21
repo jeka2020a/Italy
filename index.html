@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/adaptive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__block">
+            <div class="container">
+                <div class="header__flexbox">
+                    <a href="index.php" class="header__logo">
+                        <h1>Giocattoli</h1>
+                    </a>
+                    <div class="header__box">
+                        <a href="index.php" class="header__link text">principale</a>
+                        <a href="about.php" class="header__link text">chi siamo</a>
+                        <a href="contacts.php" class="header__link text">contatti</a>
+                        <a href="gallery.php" class="header__link text">galleria</a>
+                        
+                    </div>
+                    <button class="header__burger"></button>
+                </div>
+                
+            </div>
+        </div>
+
+        
+        <div class="header__menu-mobile">
+            <ul class="header__menu-list">
+                <li class="header__menu-li">
+                    <a href="" class="header__menu-link close__menu text">chiudere</a>
+                </li>
+                <li class="header__menu-li">
+                    <a href="index.php" class="header__link text">principale</a>
+                </li>
+                <li class="header__menu-li">
+                    <a href="about.php" class="header__link text">chi siamo</a>
+                </li>
+                <li class="header__menu-li">
+                    <a href="contacts.php" class="header__link text">contatti</a>
+                </li>
+                <li class="header__menu-li">
+                    <a href="gallery.php" class="header__link text">galleria</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="header__container">
+            <div class="container">
+                <h1 class="header__title">Benvenuti</h1>
+                <p class="header__text text">
+                    Benvenuti nel nostro sito dedicato all'affascinante mondo dei giocattoli dall'Italia!
+                    Ti invitiamo in un emozionante viaggio dove troverai giocattoli di altissima qualità, creati con amore e abilità in Italia. La nostra collezione comprende una varietà di set da gioco, puzzle, costruttori, peluche e molto altro.
+                </p>
+                <a href="about.php" class="header__link-about text">
+                    Per saperne di più
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    
+    <section class="images">
+        <div class="container">
+            <h2 class="images__title">
+                La bellezza del nostro negozio
+            </h2>
+            <div class="images__box">
+                <img class="images__img" src="images/vertical-shot-of-children-toys-near-each-other.jpg" alt="">
+                <img class="images__img" src="images/cute-fluffy-frog-toy.jpg" alt="">
+                <img class="images__img" src="images/cute-plush-toy-books-arrangement.jpg" alt="">
+                <img class="images__img" src="images/cute-plush-toys-arrangement.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="abouttoy">
+        <h2 class="abouttoy__title">
+            Immergiti nel mondo dei giocattoli
+        </h2>
+        <h3 class="abouttoy__subtitle">
+            Acquista fantastici giocattoli per i tuoi bambini
+        </h3>
+        <div class="container">
+            <p class="abouttoy__subtext text">
+                Ci sono diversi motivi importanti per cui dovresti scegliere il nostro negozio per acquistare giocattoli. Scopri i vantaggi che offriamo ai nostri clienti:
+            </p>
+            <div class="abouttoy__textbox">
+                <p class="abouttoy__text text">
+                    1. Alta qualità: selezioniamo attentamente i giocattoli per garantire la loro alta qualità. Il nostro assortimento comprende giocattoli italiani noti per la loro lavorazione impeccabile, i dettagli e l'uso di materiali sicuri.
+                    <br><br>
+                    2. Design unico: i giocattoli italiani sono famosi per il loro design elegante ed estetico. Attirano l'attenzione con la loro bellezza e originalità, contribuendo a sviluppare la percezione estetica nei bambini.
+                    <br><br>
+                    3. Sviluppo delle abilità: i nostri giocattoli promuovono lo sviluppo di varie abilità nei bambini. Stimolano il pensiero logico, la creatività, le capacità motorie, la coordinazione dei movimenti e molte altre abilità necessarie per il pieno sviluppo dei bambini.
+                    <br><br>
+                </p>
+                <p class="abouttoy__text text">
+                    4. Sicurezza ambientale: nel nostro negozio troverai giocattoli realizzati con materiali ecologici che non contengono sostanze nocive. Testiamo accuratamente ogni prodotto per soddisfare i più elevati standard di sicurezza.
+                    <br><br>
+                    5. Varietà di scelte: offriamo una vasta gamma di giocattoli in grado di soddisfare i vari gusti e interessi dei bambini di tutte le età. Sarai in grado di trovare di tutto, dai peluche per i bambini alle costruzioni complesse e ai puzzle per i bambini più grandi.
+                    <br><br>
+                    6. Eccellente servizio clienti: ci sforziamo di rendere la tua esperienza di acquisto comoda e soddisfacente. Il nostro team è sempre pronto ad aiutarti con domande, fornire consigli e garantire una consegna rapida dei tuoi acquisti.
+                    <br><br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <?php
+        require_once "footer.php";
+    ?>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
